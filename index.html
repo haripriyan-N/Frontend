@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteBank | Premium Banking Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon"
+        href="https://www.codewithfaraz.com/tools/placeholder?size=32x32&bgColor=2563EB&textColor=E2E8F0&text=EB"
+        type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="vault-perspective-container">
+                <div class="vault-door-assembly">
+                    <div class="vault-frame">
+                        <div class="vault-interior"></div>
+                        <div class="bolt-receptacle top"></div>
+                        <div class="bolt-receptacle right"></div>
+                        <div class="bolt-receptacle bottom"></div>
+                        <div class="bolt-receptacle left"></div>
+                    </div>
+                    <div class="vault-door">
+                        <div class="hinge top"></div>
+                        <div class="hinge bottom"></div>
+                        <div class="vault-dial-container">
+                            <div class="vault-dial">
+                                <div class="vault-handle">
+                                    <div class="handle-spoke"></div>
+                                    <div class="handle-spoke"></div>
+                                    <div class="handle-spoke"></div>
+                                    <div class="handle-hub"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Panel (on the right) -->
+            <div class="security-panel">
+                <div class="panel-header">
+                    <span>BIOMETRIC AUTHENTICATION</span>
+                </div>
+                <div class="scanner-area">
+                    <div class="fingerprint-scanner">
+                        <svg class="fingerprint-svg" viewBox="0 0 24 24">
+                            <g class="fingerprint-lines">
+                                <path
+                                    d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z" />
+                            </g>
+                            <g class="success-mark">
+                                <path d="M6 12 l4 4 l8 -8" />
+                            </g>
+                        </svg>
+                        <div class="scan-line"></div>
+                    </div>
+                </div>
+                <div class="status-display">
+                    <span class="status-text">Awaiting Scan</span>
+                </div>
+            </div>
+        </div>
+        <div class="vault-instructions">
+            <p>Press and Hold to Scan</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="index.html" class="logo">
+                        <span>Elite</span>Bank
+                    </a>
+
+                    <div class="nav-links">
+                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="#accounts" class="nav-link">Accounts</a>
+                        <a href="#investments" class="nav-link">Investments</a>
+                        <a href="#loans" class="nav-link">Loans</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="#" class="btn btn-outline">Login</a>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-header">
+                    <a href="index.html" class="logo">
+                        <span>Elite</span>Bank
+                    </a>
+                    <button class="close-mobile-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-links">
+                    <a href="#home" class="mobile-nav-link active">Home</a>
+                    <a href="#accounts" class="mobile-nav-link">Accounts</a>
+                    <a href="#investments" class="mobile-nav-link">Investments</a>
+                    <a href="#loans" class="mobile-nav-link">Loans</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+                <div class="mobile-menu-actions">
+                    <a href="#" class="btn btn-outline">Login</a>
+                    <a href="#" class="btn btn-primary">Open Account</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Premium Banking <span>Experience</span></h1>
+                    <p class="hero-subtitle">EliteBank offers exclusive financial services tailored for high-net-worth
+                        individuals and businesses seeking superior banking solutions.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-cards">
+                    <div class="card primary-card">
+                        <div class="card-content">
+                            <h3>Elite Black Card</h3>
+                            <p>Unlimited benefits and exclusive privileges</p>
+                            <div class="card-number">•••• •••• •••• 4567</div>
+                            <div class="card-footer">
+                                <div class="card-holder">John Smith</div>
+                                <div class="card-expiry">09/25</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card secondary-card">
+                        <div class="card-content">
+                            <h3>Platinum Account</h3>
+                            <p>Premium checking with high interest</p>
+                            <div class="card-number">•••• •••• •••• 8910</div>
+                            <div class="card-footer">
+                                <div class="card-holder">John Smith</div>
+                                <div class="card-expiry">09/25</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="250">0</h3>
+                        <p class="stat-label">Countries Worldwide</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="98.7">0</h3>
+                        <p class="stat-label">Customer Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="24">0</h3>
+                        <p class="stat-label">Hour Support</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="2.1">0</h3>
+                        <p class="stat-label">Million Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="accounts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Exclusive <span>Features</span></h2>
+                    <p class="section-subtitle">Experience banking tailored to your sophisticated lifestyle</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Advanced Security</h3>
+                        <p>Multi-layered protection with biometric authentication and real-time fraud monitoring.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Global Access</h3>
+                        <p>Manage your finances seamlessly across borders with our international network.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Wealth Management</h3>
+                        <p>Personalized investment strategies from our team of financial experts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Dedicated Support</h3>
+                        <p>24/7 access to your personal banking concierge for all your financial needs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>High-Yield Accounts</h3>
+                        <p>Premium interest rates that grow your wealth faster than standard accounts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Travel Benefits</h3>
+                        <p>Exclusive airport lounge access, travel insurance, and concierge services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accounts Section -->
+        <section class="accounts-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Premium <span>Accounts</span></h2>
+                    <p class="section-subtitle">Choose the account that matches your financial aspirations</p>
+                </div>
+
+                <div class="accounts-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="personal">Personal Banking</button>
+                        <button class="tab-btn" data-tab="business">Business Banking</button>
+                        <button class="tab-btn" data-tab="private">Private Banking</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <div class="tab-pane active" id="personal">
+                            <div class="account-cards-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="account-card swiper-slide">
+                                        <div class="account-card-header">
+                                            <h3>Elite Platinum</h3>
+                                            <div class="account-badge">Popular</div>
+                                        </div>
+                                        <div class="account-card-body">
+                                            <ul class="account-features">
+                                                <li><i class="fas fa-check"></i> 2.5% Annual Interest</li>
+                                                <li><i class="fas fa-check"></i> No Monthly Fees</li>
+                                                <li><i class="fas fa-check"></i> Unlimited Transactions</li>
+                                                <li><i class="fas fa-check"></i> Global ATM Access</li>
+                                                <li><i class="fas fa-check"></i> Priority Customer Support</li>
+                                            </ul>
+                                            <div class="account-price">
+                                                <span class="price">$25,000</span>
+                                                <span class="price-label">Minimum Deposit</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-card-footer">
+                                            <a href="#" class="btn btn-primary">Open Account</a>
+                                            <a href="#" class="btn-text">Learn More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="account-card swiper-slide featured">
+                                        <div class="account-card-header">
+                                            <h3>Elite Black</h3>
+                                            <div class="account-badge">Premium</div>
+                                        </div>
+                                        <div class="account-card-body">
+                                            <ul class="account-features">
+                                                <li><i class="fas fa-check"></i> 3.2% Annual Interest</li>
+                                                <li><i class="fas fa-check"></i> Personal Concierge</li>
+                                                <li><i class="fas fa-check"></i> Airport Lounge Access</li>
+                                                <li><i class="fas fa-check"></i> Wealth Management</li>
+                                                <li><i class="fas fa-check"></i> Exclusive Events</li>
+                                            </ul>
+                                            <div class="account-price">
+                                                <span class="price">$100,000</span>
+                                                <span class="price-label">Minimum Deposit</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-card-footer">
+                                            <a href="#" class="btn btn-primary">Open Account</a>
+                                            <a href="#" class="btn-text">Learn More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="account-card swiper-slide">
+                                        <div class="account-card-header">
+                                            <h3>Elite Gold</h3>
+                                        </div>
+                                        <div class="account-card-body">
+                                            <ul class="account-features">
+                                                <li><i class="fas fa-check"></i> 1.8% Annual Interest</li>
+                                                <li><i class="fas fa-check"></i> No Foreign Fees</li>
+                                                <li><i class="fas fa-check"></i> Mobile Banking</li>
+                                                <li><i class="fas fa-check"></i> Bill Payments</li>
+                                                <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                            </ul>
+                                            <div class="account-price">
+                                                <span class="price">$10,000</span>
+                                                <span class="price-label">Minimum Deposit</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-card-footer">
+                                            <a href="#" class="btn btn-primary">Open Account</a>
+                                            <a href="#" class="btn-text">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="business">
+                            <div class="coming-soon">
+                                <h3>Business Banking Solutions</h3>
+                                <p>Our premium business accounts are tailored for enterprises of all sizes. More details
+                                    coming soon.</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="private">
+                            <div class="coming-soon">
+                                <h3>Private Wealth Management</h3>
+                                <p>Exclusive private banking services for high-net-worth individuals. Contact us for a
+                                    personal consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section class="investment-section" id="investments">
+            <div class="container">
+                <div class="investment-grid">
+                    <div class="investment-content">
+                        <h2 class="section-title">Smart <span>Investments</span></h2>
+                        <p class="section-subtitle">Grow your wealth with our expertly managed investment portfolios</p>
+
+                        <div class="investment-features">
+                            <div class="investment-feature">
+                                <div class="feature-number">01</div>
+                                <div class="feature-content">
+                                    <h3>Diversified Portfolios</h3>
+                                    <p>Spread risk across multiple asset classes tailored to your risk tolerance.</p>
+                                </div>
+                            </div>
+                            <div class="investment-feature">
+                                <div class="feature-number">02</div>
+                                <div class="feature-content">
+                                    <h3>Expert Management</h3>
+                                    <p>Our team of seasoned investors manages your portfolio with precision.</p>
+                                </div>
+                            </div>
+                            <div class="investment-feature">
+                                <div class="feature-number">03</div>
+                                <div class="feature-content">
+                                    <h3>Transparent Fees</h3>
+                                    <p>Clear, competitive pricing with no hidden charges.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Explore Investments</a>
+                    </div>
+
+                    <div class="investment-chart">
+                        <canvas id="investmentChart"></canvas>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #2563EB;"></span>
+                                <span class="legend-label">Stocks</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #3B82F6;"></span>
+                                <span class="legend-label">Bonds</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #60A5FA;"></span>
+                                <span class="legend-label">Real Estate</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #93C5FD;"></span>
+                                <span class="legend-label">Commodities</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #BFDBFE;"></span>
+                                <span class="legend-label">Cash</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Client <span>Testimonials</span></h2>
+                    <p class="section-subtitle">What our valued clients say about our services</p>
+                </div>
+
+                <div class="testimonials-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"EliteBank has transformed how I manage my finances. The
+                                personalized service and attention to detail are unmatched in the industry."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CEO, Tech Innovations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The investment advice I've received from my EliteBank advisor
+                                has consistently outperformed the market. Their expertise is worth every penny."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>Entrepreneur</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"As an international business owner, EliteBank's global services
+                                have simplified my financial operations across multiple countries."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena Rodriguez">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Elena Rodriguez</h4>
+                                    <p>Founder, Global Imports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Section -->
+        <section class="app-section">
+            <div class="container">
+                <div class="app-grid">
+                    <div class="app-content">
+                        <h2 class="section-title">Mobile <span>Banking</span> App</h2>
+                        <p class="section-subtitle">Manage your finances anytime, anywhere with our award-winning mobile
+                            app</p>
+
+                        <div class="app-features">
+                            <div class="app-feature">
+                                <div class="app-icon">
+                                    <i class="fas fa-fingerprint"></i>
+                                </div>
+                                <h3>Biometric Login</h3>
+                                <p>Secure access with face or fingerprint recognition</p>
+                            </div>
+                            <div class="app-feature">
+                                <div class="app-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3>Instant Transfers</h3>
+                                <p>Send money to anyone in seconds</p>
+                            </div>
+                            <div class="app-feature">
+                                <div class="app-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Investment Tracking</h3>
+                                <p>Monitor your portfolio performance in real-time</p>
+                            </div>
+                            <div class="app-feature">
+                                <div class="app-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <h3>Live Chat</h3>
+                                <p>Connect instantly with your personal banker</p>
+                            </div>
+                        </div>
+
+                        <div class="app-download">
+                            <a href="#" class="download-btn">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/bank-website/apple-store.png"
+                                    alt="">
+                            </a>
+                            <a href="#" class="download-btn">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/bank-website/google-play.png"
+                                    alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="app-preview">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-screen-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/bank-website/dashboard.png"
+                                                alt="App Dashboard">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/bank-website/accounts.png"
+                                                alt="Accounts Screen">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/bank-website/investment.png"
+                                                alt="Investments Screen">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact <span>Us</span></h2>
+                    <p class="section-subtitle">Our team is ready to assist you with all your banking needs</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Headquarters</h3>
+                                <p>250 Park Avenue, New York, NY 10177</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+1 (800) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@elitebank.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Working Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 3:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="bankContactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select Subject</option>
+                                    <option value="account">Account Inquiry</option>
+                                    <option value="loan">Loan Information</option>
+                                    <option value="investment">Investment Services</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <a href="index.html" class="logo">
+                            <span>Elite</span>Bank
+                        </a>
+                        <p class="footer-about">EliteBank provides premium banking services to discerning clients
+                            worldwide, offering sophisticated financial solutions with personalized service.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3 class="footer-title">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Personal Banking</a></li>
+                            <li><a href="#">Business Banking</a></li>
+                            <li><a href="#">Private Banking</a></li>
+                            <li><a href="#">Wealth Management</a></li>
+                            <li><a href="#">Investment Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News & Media</a></li>
+                            <li><a href="#">Corporate Responsibility</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3 class="footer-title">Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Online Banking</a></li>
+                            <li><a href="#">Mobile App</a></li>
+                            <li><a href="#">Branch Locator</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>© 2025 EliteBank. All Rights Reserved.<br />
+                            Designed with <i class="fas fa-heart text-danger" style="color:red"></i> by <a
+                                href="https://www.codewithfaraz.com">CodewithFaraz</a></p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Security</a>
+                        <a href="#">Disclosures</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
